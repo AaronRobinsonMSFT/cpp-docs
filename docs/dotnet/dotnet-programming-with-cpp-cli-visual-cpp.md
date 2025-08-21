@@ -6,6 +6,13 @@ helpviewer_keywords: ["programming [C++], .NET programming", ".NET Framework [C+
 ---
 # .NET programming with C++/CLI
 
+> [!IMPORTANT]
+> C++/CLI is a technology designed during the early years of .NET (2005–2010) and remains supported for compatibility purposes. It is best suited for existing codebases, particularly those being brought forward from the .NET Framework to .NET Core, or for maintaining large legacy systems that are unlikely to evolve beyond the .NET Framework.
+> 
+> While C++/CLI is reliable and robust, no new feature work is planned beyond what’s necessary to ensure continued functionality. Developers should be aware that using C++/CLI pessimizes both C++ and .NET languages, as it is constrained by the language features and APIs available at the time of its design—prior to ISO C++11 and .NET Core.
+> 
+> For new projects, we recommend exploring modern alternatives such as https://github.com/dotnet/ClangSharp or https://www.swig.org/, which offer more flexibility and better alignment with current language and runtime capabilities.
+
 C++/CLI supplanted Managed C++. C++/CLI is a language specification created by Microsoft that extends C++ to support .NET. It's only supported on Windows. It's not for writing [WinUI](/windows/apps/winui) or Universal Windows Platform [UWP](/windows/uwp/get-started/universal-application-platform-guide) Windows Runtime (WinRT) apps. It's for writing .NET applications and components that run on .NET. C++/CLI is a bridge between native C++ code and managed code. It allows you to use existing C++ libraries in .NET applications and to write new .NET applications in C++.
 
 Microsoft provides C++/WinRT for writing WinUI and WinRT apps. It's an entirely standard modern C++17 language projection for Windows Runtime (WinRT) APIs. For more information about using C++ with the Windows Runtime (WinRT), see [C++/WinRT](/windows/uwp/cpp-and-winrt-apis/).
